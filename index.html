@@ -1,110 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ameya Deshmukh - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts (Optional) -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ameya Deshmukh's Portfolio showcasing experiences, projects, and education in Computer Science and AI." />
+  <title>Ameya Deshmukh - Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <img src="images/profile.jpg" alt="Ameya Deshmukh" class="profile-pic">
-        <h1>Ameya Deshmukh</h1>
-        <div class="links">
-            <a href="https://drive.google.com/file/d/1llS9orG908cuvrGlDJZdVueL6cm6tQdW/view?usp=share_link" target="_blank">CV</a>
-            <a href="https://github.com/ameya1252" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/ameya1252" target="_blank">LinkedIn</a>
+  <header>
+    <div class="header-overlay">
+      <img src="images/profile.jpg" alt="Ameya Deshmukh" class="profile-pic" />
+      <h1>Ameya Deshmukh</h1>
+      <div class="links">
+        <a href="https://drive.google.com/file/d/1llS9orG908cuvrGlDJZdVueL6cm6tQdW/view?usp=share_link" target="_blank">CV</a>
+        <a href="https://github.com/ameya1252" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/ameya1252" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="experiences">
+      <h2>Experiences</h2>
+      <div class="card">
+        <div class="card-item">
+          <h3>Stanford University | Research Scientist</h3>
+          <p class="time-location"><strong>Palo Alto, CA | May 2023 - Present</strong></p>
         </div>
-    </header>
+        <div class="card-item">
+          <h3>Haworth Laboratory | Deep Learning Engineer</h3>
+          <p class="time-location"><strong>Cincinnati, OH | Jan 2023 - Apr 2023</strong></p>
+        </div>
+        <div class="card-item">
+          <h3>BUCL Laboratory | Robotics Research Assistant</h3>
+          <p class="time-location"><strong>Cincinnati, OH | Aug 2022 - Dec 2022</strong></p>
+        </div>
+        <div class="card-item">
+          <h3>Procter &amp; Gamble | Software Engineering Intern</h3>
+          <p class="time-location"><strong>Cincinnati, OH | Jan 2022 - May 2022</strong></p>
+        </div>
+        <div class="card-item">
+          <h3>Machine Intelligence Laboratory | NLP Research Assistant</h3>
+          <p class="time-location"><strong>Cincinnati, OH | Aug 2021 - Dec 2021</strong></p>
+        </div>
+        <div class="card-item">
+          <h3>Budding Analyst | Full-Stack Software Engineering Intern</h3>
+          <p class="time-location"><strong>New Delhi, IN | May 2021 - Aug 2021</strong></p>
+        </div>
+      </div>
+    </section>
 
-    <main>
-        <section id="experiences">
-            <h2>Experiences</h2>
-            
-            <div class="experience-item">
-                <h3>Stanford University | Research Scientist</h3>
-                <p><strong>Palo Alto, CA | May 2023 - Present</strong></p>
-            </div>
+    <section id="education">
+      <h2>Education</h2>
+      <div class="card">
+        <div class="card-item">
+          <h3>M.S. in Computer Science - AI Specialization</h3>
+          <p class="time-location"><strong>University of Southern California, Los Angeles, CA | Expected May 2026</strong></p>
+          <p>GPA: 3.85</p>
+        </div>
+        <div class="card-item">
+          <h3>B.S. in Computer Science - Summa Cum Laude</h3>
+          <p class="time-location"><strong>University of Cincinnati, Cincinnati, OH | Aug 2020 - Apr 2024</strong></p>
+          <p>GPA: 3.92</p>
+        </div>
+      </div>
+    </section>
 
-            <div class="experience-item">
-                <h3>Haworth Laboratory | Deep Learning Engineer</h3>
-                <p><strong>Cincinnati, OH | Jan 2023 - Apr 2023</strong></p>
-            </div>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="card">
+        <div class="card-item">
+          <h3>Distributed Real-Time Video Analytics Engine</h3>
+          <ul>
+            <li>Designed a GPU-accelerated video processing pipeline (OpenCV, TensorRT), reducing object detection latency by 60%.</li>
+            <li>Deployed a Kubernetes-managed distributed system on AWS EC2 to process 1000+ video streams with 99.9% uptime.</li>
+            <li>Integrated a custom WebSocket API for real-time alerts achieving 50ms anomaly detection.</li>
+          </ul>
+        </div>
+        <div class="card-item">
+          <h3>LLM-Powered Code Review Assistant</h3>
+          <ul>
+            <li>Built a Dockerized microservice with FastAPI, reducing code review cycle time by 40% for a 50-developer team.</li>
+            <li>Fine-tuned a CodeLlama-7B model on 10k+ GitHub PRs to automate code reviews with 92% bug detection accuracy.</li>
+            <li>Optimized inference latency by 70% using model quantization and GPU acceleration on Azure ML.</li>
+          </ul>
+        </div>
+        <div class="card-item">
+          <h3>Autonomous Vehicle Perception System</h3>
+          <ul>
+            <li>Developed an end-to-end perception system for autonomous vehicles using computer vision and sensor fusion.</li>
+            <li>Integrated LIDAR, radar, and camera data for precise object detection, classification, and tracking.</li>
+            <li>Deployed on embedded hardware, achieving real-time performance and enhanced vehicle safety.</li>
+          </ul>
+        </div>
+        <div class="card-item">
+          <h3>Deep Reinforcement Learning for Robotics Control</h3>
+          <ul>
+            <li>Implemented deep reinforcement learning (PPO &amp; DQN) to control robotic manipulators in dynamic environments.</li>
+            <li>Enhanced task efficiency and adaptability in complex simulation scenarios.</li>
+          </ul>
+        </div>
+        <div class="card-item">
+          <h3>Natural Language Processing for Legal Document Analysis</h3>
+          <ul>
+            <li>Developed an NLP pipeline to automate legal document analysis, including contract review and compliance checks.</li>
+            <li>Utilized transformer-based models like BERT for entity recognition and relation extraction.</li>
+            <li>Integrated the system with a user-friendly dashboard for legal professionals.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
 
-            <div class="experience-item">
-                <h3>BUCL Laboratory | Robotics Research Assistant</h3>
-                <p><strong>Cincinnati, OH | Aug 2022 - Dec 2022</strong></p>
-            </div>
-
-            <div class="experience-item">
-                <h3>Procter & Gamble | Software Engineering Intern</h3>
-                <p><strong>Cincinnati, OH | Jan 2022 - May 2022</strong></p>
-            </div>
-
-            <div class="experience-item">
-                <h3>Machine Intelligence Laboratory | NLP Research Assistant</h3>
-                <p><strong>Cincinnati, OH | Aug 2021 - Dec 2021</strong></p>
-            </div>
-
-            <div class="experience-item">
-                <h3>Budding Analyst | Full-Stack Software Engineering Intern</h3>
-                <p><strong>New Delhi, IN | May 2021 - Aug 2021</strong></p>
-            </div>
-        </section>
-
-        <section id="education">
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3>M.S. in Computer Science - AI Specialization</h3>
-                <p><strong>University of Southern California</strong>, Los Angeles, CA | <strong>Expected May 2026</strong></p>
-                <p>GPA: 3.85</p>
-            </div>
-            <div class="education-item">
-                <h3>B.S. in Computer Science - Summa Cum Laude</h3>
-                <p><strong>University of Cincinnati</strong>, Cincinnati, OH | <strong>Aug 2020 - Apr 2024</strong></p>
-                <p>GPA: 3.92</p>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-item">
-                <h3>Distributed Real-Time Video Analytics Engine</h3>
-                <p>Designed a GPU-accelerated video processing pipeline (OpenCV , TensorRT), reducing object detection latency by 60%.</p>
-                <p>Deployed Kubernetes-managed distributed system on AWS EC2, to process 1000+ video streams with 99.9% uptime.</p>
-                <p>Integrated custom WebSocket API for real-time alerts, achieving 50ms anomaly detection in surveillance feeds.</p>
-            </div>
-            <div class="project-item">
-                <h3>LLM-Powered Code Review Assistant</h3>
-                <p>Built Dockerized microservice with FastAPI, reducing code review cycle time by 40% for a 50-developer engineering team.</p>
-                <p>Fine-tuned a CodeLlama-7B model on 10k+ GitHub PRs, automating code reviews with 92% bug detection accuracy.</p>
-                <p>Optimized inference latency by 70% using model quantization and GPU acceleration on Azure ML.</p>
-            </div>
-            <div class="project-item">
-                <h3>Autonomous Vehicle Perception System</h3>
-                <p>Designed and developed an end-to-end perception system for autonomous vehicles, leveraging computer vision and sensor fusion techniques.</p> 
-                <p>Integrated LIDAR, radar, and camera data to perform object detection, classification, and tracking with high precision.</p>
-                <p>Deployed the system on embedded hardware, achieving real-time performance and enhancing vehicle safety features.</p>
-            </div>
-            <div class="project-item">
-                <h3>Deep Reinforcement Learning for Robotics Control</h3>
-                <p>Implemented deep reinforcement learning algorithms to control robotic manipulators in dynamic environments.</p> 
-                <p>Applied techniques such as Proximal Policy Optimization (PPO) and Deep Q-Networks (DQN) to train models that adapt to varying conditions.</p>
-                <p>Successfully demonstrated improved task efficiency and adaptability in complex simulation scenarios.</p>
-            </div>
-            <div class="project-item">
-                <h3>Natural Language Processing for Legal Document Analysis</h3>
-                <p>Developed an NLP pipeline to automate the analysis of legal documents, including contract review and compliance checks.</p> 
-                <p>Employed transformer-based models like BERT for entity recognition and relation extraction, achieving high accuracy in identifying key clauses and potential compliance issues.</p> 
-                <p>Integrated the system with a user-friendly dashboard for streamlined access by legal professionals.</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Ameya Deshmukh. All rights reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Ameya Deshmukh. All rights reserved.</p>
+  </footer>
 </body>
 </html>
